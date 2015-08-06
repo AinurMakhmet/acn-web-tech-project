@@ -9,6 +9,8 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
     $scope.phones = Phone.query();
     $scope.orderProp = 'age';
     $scope.test = "oi!";
+    $scope.cheapThreshold ="300";
+    $scope.expensiveThreshold ="500";
   }]);
 
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
