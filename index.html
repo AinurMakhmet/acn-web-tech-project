@@ -25,18 +25,16 @@
     <div class="header-name">
     <h1>Google Phone Gallery</h1>
     </div>
-
-      <div class="span2">
-        <!--Sidebar content-->
-        Search: <input ng-model="query"><br><br>
-        Sort by:
-        <select ng-model="orderProp">
-          <option value="name">Alphabetical</option>
-          <option value="age">Newest</option>
-        </select>
-
-      </div>
+    <div class="span2">
+      <input ng-model="query" placeholder="Search">
+      <select ng-model="orderProp">
+        <option value='' disabled selected style='display:none;'>Sort by</option>
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+      </select>
+    </div>
   </header>
+  <div class="header-back"></div>
   <div class="view-container">
     <div ng-view class="view-frame"></div>
   </div>
