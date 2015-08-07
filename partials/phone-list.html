@@ -14,7 +14,7 @@
       </div>
     </div>
       <ul class="phones">
-        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp | filter:phonelist"
             style="border-top: 1px solid rgb(205, 205, 205);"
 
             ng-style="{{phone.price}} >= expensiveThreshold && {'border-right': '5px solid rgba(255,210,207, 1)'} ||
