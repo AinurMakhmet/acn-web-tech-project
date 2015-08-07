@@ -6,7 +6,10 @@
 
       <ul class="phones">
         <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
-            class="thumbnail phone-listing" ng-class="{expensive : {{phone.price}} >= expensiveThreshold, moderate : {{phone.price}} >= cheapThreshold && {{phone.price}} < expensiveThreshold, cheap : {{phone.price}} < cheapThreshold }" >
+            style="border-bottom: 1px solid rgb(205, 205, 205);"
+            class="thumbnail phone-listing" ng-class="{expensive : {{phone.price}} >= expensiveThreshold,
+                  moderate : {{phone.price}} >= cheapThreshold && {{phone.price}} < expensiveThreshold,
+                  cheap : {{phone.price}} < cheapThreshold }" >
           <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
           <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
           <p>{{phone.snippet}}</p>

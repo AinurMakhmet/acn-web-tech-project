@@ -81,15 +81,20 @@ ul.phone-thumbs img:hover {
 
 ul.specs {
   clear: both;
-  margin: 0;
+  margin: 0 25px 50px 25px;
   padding: 0;
   list-style: none;
+  align-items: center;
+
 }
 
 ul.specs > li{
   display: inline-block;
   width: 200px;
   vertical-align: top;
+  margin: 5px 5px 5px 5px;
+  border-right: 1px solid rgb(205, 205, 205);
+  min-height: 250px;
 }
 
 ul.specs > li > span{
@@ -98,6 +103,10 @@ ul.specs > li > span{
 }
 
 ul.specs dt {
+  font-weight:  normal;
+}
+
+ul.specs dt.desctitle {
   font-weight: bold;
 }
 
