@@ -3,15 +3,24 @@
 
     <div class="span10">
       <!--Body content-->
-
+      <div class="typeselectcontainer">
+      <div class="type-select">
+      <input type="radio" id="phone" name="phone-list" value ="mobile" ng-model="phonelist"/>
+            <label for="phone">Phones</label>
+        </div>
+        <div class="type-select">
+            <input type="radio" id="tablet" name="tablet-list" value="tablet" ng-model="phonelist"/>
+            <label for="tablet">Tablets</label>
+      </div>
+    </div>
       <ul class="phones">
-        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
-            class="thumbnail phone-listing" ng-class="{expensive : {{phone.price}} >= expensiveThreshold, moderate : {{phone.price}} >= cheapThreshold && {{phone.price}} < expensiveThreshold, cheap : {{phone.price}} < cheapThreshold }" >
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp | filter:phonelist"
+            class="thumbnail phone-listing" ng-class="{expensive : {{phone.price}} >= expensiveThreshold, moderate : {{phone.price}} >= cheapThreshold && {{phone.price}} < expensiveThreshold, cheap : {{phone.price}} < cheapThreshold }"
+          >
           <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
           <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
           <p>{{phone.snippet}}</p>
           <h3>{{phone.price | currency:"£"}}</h3>
-          <!--<p>£{{phone.price}}</p>-->
         </li>
       </ul>
 

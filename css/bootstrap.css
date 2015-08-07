@@ -245,6 +245,29 @@ a:hover {
   width:100%;
 }
 
+.type-select {
+  height: 40px;
+  max-width: 100%;
+  width:auto;
+  float: left;
+  margin-left: 5px;
+  font-size: 25px;
+}
+
+.type-select input {
+  display:none;
+}
+
+.typeselectcontainer{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.selected {
+  font-style:bold;
+  text-decoration: underline;
+}
+
 header{
   padding: 0px;
   height: 100px;
@@ -440,9 +463,9 @@ header .span2 {
 }
 
 .container-fluid {
-  padding-right: 20px;
-  padding-left: 20px;
   *zoom: 1;
+  max-width:100%;
+  width:100%;
 }
 
 .container-fluid:before,
