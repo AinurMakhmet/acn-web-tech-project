@@ -153,11 +153,13 @@ textarea {
 
 body {
   margin: 0;
+  padding:0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #333333;
   background-color: #ffffff;
+  max-width: 100%;
 }
 
 a {
@@ -236,8 +238,45 @@ a:hover {
   width: 220px;
 }
 
-.span2 {
-  width: 140px;
+.header-back {
+  margin-bottom: 10px;
+  height: 100px;
+  max-width: 100%;
+  width:100%;
+}
+
+header{
+  padding: 0px;
+  height: 100px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color: #779ECB;
+  position:fixed;
+  z-index:10000;
+}
+
+header .span2 {
+  width: 230px;
+  order: 2;
+  align-self: flex-end;
+  margin: auto 20px;
+
+}
+
+.header-name{
+  float: left;
+  margin-right: 100px;
+  margin:20px;
+  order: 1;
+}
+
+.header-name h1{
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+  border: 0px none;
 }
 
 .span1 {
