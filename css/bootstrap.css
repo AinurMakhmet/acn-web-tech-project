@@ -207,7 +207,7 @@ a:hover {
 }
 
 .span10 {
-  width: 780px;
+  width: 100%;
 }
 
 .span9 {
@@ -355,7 +355,8 @@ header .span2 {
 }
 
 .row-fluid {
-  width: 100%;
+  max-width:100%;
+  width:100%;
   *zoom: 1;
 }
 
@@ -374,12 +375,6 @@ header .span2 {
   float: left;
   width: 100%;
   min-height: 28px;
-  margin-left: 2.127659574%;
-  *margin-left: 2.0744680846382977%;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .row-fluid [class*="span"]:first-child {
@@ -397,8 +392,8 @@ header .span2 {
 }
 
 .row-fluid .span10 {
-  width: 82.97872339599999%;
-  *width: 82.92553190663828%;
+  max-width:100%;
+  width:100%;
 }
 
 .row-fluid .span9 {

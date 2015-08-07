@@ -14,13 +14,12 @@
       </div>
     </div>
       <ul class="phones">
-        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp | filter:phonelist"
-            class="thumbnail phone-listing" ng-class="{expensive : {{phone.price}} >= expensiveThreshold, moderate : {{phone.price}} >= cheapThreshold && {{phone.price}} < expensiveThreshold, cheap : {{phone.price}} < cheapThreshold }"
-          >
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp | filter:phonelist" class="thumbnail phone-listing">
           <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
           <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
           <p>{{phone.snippet}}</p>
           <h3>{{phone.price | currency:"£"}}</h3>
+          <div ng-class="{expensive : {{phone.price}} >= expensiveThreshold, moderate : {{phone.price}} >= cheapThreshold && {{phone.price}} < expensiveThreshold, cheap : {{phone.price}} < cheapThreshold }""></div>
         </li>
       </ul>
 
