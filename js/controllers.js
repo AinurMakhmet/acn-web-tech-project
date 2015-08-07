@@ -8,6 +8,7 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
   function($scope, Phone) {
     $scope.phones = Phone.query();
     $scope.test = "oi!";
+    $scope.phonelist="mobile";
     $scope.cheapThreshold ="300";
     $scope.expensiveThreshold ="500";
   }]);

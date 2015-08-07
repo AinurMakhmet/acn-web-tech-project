@@ -3,7 +3,16 @@
 
     <div class="span10">
       <!--Body content-->
-
+      <div class="typeselectcontainer">
+      <div class="type-select">
+      <input type="radio" id="phone" name="phone-list" value ="mobile" ng-model="phonelist"/>
+            <label for="phone">Phones</label>
+        </div>
+        <div class="type-select">
+            <input type="radio" id="tablet" name="tablet-list" value="tablet" ng-model="phonelist"/>
+            <label for="tablet">Tablets</label>
+      </div>
+    </div>
       <ul class="phones">
         <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
             style="border-bottom: 1px solid rgb(205, 205, 205);"
@@ -19,7 +28,6 @@
           <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
           <p>{{phone.snippet}}</p>
           <h3>{{phone.price | currency:"£"}}</h3>
-          <!--<p>£{{phone.price}}</p>-->
         </li>
       </ul>
 
