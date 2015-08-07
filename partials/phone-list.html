@@ -6,11 +6,11 @@
       <div class="typeselectcontainer">
       <div class="type-select">
       <input type="radio" id="phone" name="phone-list" value ="mobile" ng-model="phonelist"/>
-            <label for="phone">Phones</label>
+            <label for="phone" ng-class="{selected : phonelist === mobileType}">Phones</label>
         </div>
         <div class="type-select">
             <input type="radio" id="tablet" name="tablet-list" value="tablet" ng-model="phonelist"/>
-            <label for="tablet">Tablets</label>
+            <label for="tablet"  ng-class="{selected : phonelist === tabletType}">Tablets</label>
       </div>
     </div>
       <ul class="phones">

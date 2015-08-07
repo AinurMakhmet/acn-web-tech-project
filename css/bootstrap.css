@@ -246,14 +246,18 @@ a:hover {
 }
 
 .type-select {
-  height: 40px;
+  height: 50px;
   max-width: 100%;
-  width:auto;
   float: left;
   margin-left: 5px;
-  font-size: 25px;
 }
 
+.type-select label{
+
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  padding: 10px;
+}
 .type-select input {
   display:none;
 }
@@ -267,6 +271,7 @@ a:hover {
   font-style:bold;
   text-decoration: underline;
 }
+
 
 header{
   padding: 0px;

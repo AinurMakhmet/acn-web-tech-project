@@ -11,6 +11,8 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
     $scope.phonelist="mobile";
     $scope.cheapThreshold ="300";
     $scope.expensiveThreshold ="500";
+    $scope.mobileType ="mobile";
+    $scope.tabletType ="tablet";  
   }]);
 
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
