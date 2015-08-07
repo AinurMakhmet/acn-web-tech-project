@@ -19,13 +19,12 @@ body {
 
 .thumb {
   float: left;
-  margin-left: 5px;
+  margin-left: 20px;
   margin-top: -5px;
-  margin-right: 5px;
+  margin-right: 20px;
   padding-bottom: 1em;
   height: 155px;
   width: 170px;
-  border: 2px solid #dddddd;
 }
 
 .phones li {
@@ -34,7 +33,6 @@ body {
   padding-top: 15px;
   border:0 none;
   box-shadow: none;
-  margin-bottom: 10px;
   width:98%;
   background-color: #f9f9f9;
   font-size:20px;
