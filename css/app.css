@@ -1,18 +1,5 @@
 /* app css stylesheet */
 
-/* cheap/moderate/expensive li elements */
-.cheap {
-  background-color: rgba(214,245,214, 1);
-}
-
-.moderate {
-  background-color: rgba(254,254,223, 1);
-}
-
-.expensive {
-  background-color:rgba(255,210,207, 1);
-}
-
 body {
   padding-top: 20px;
 }
