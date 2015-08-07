@@ -10,6 +10,7 @@
           <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
           <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
           <p>{{phone.snippet}}</p>
+          <h3>{{phone.price | currency:"£"}}</h3>
           <!--<p>£{{phone.price}}</p>-->
         </li>
       </ul>
